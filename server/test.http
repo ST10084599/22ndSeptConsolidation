@@ -1,0 +1,28 @@
+###
+GET https://localhost:5050/ HTTP/1.1
+###
+GET https://localhost:5050/record HTTP/1.1
+###
+POST https://localhost:5050/record HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "test1",
+    "position": "youwillneverguess",
+    "level": "Senior"
+}
+###
+POST https://localhost:5050/user/signup HTTP/1.1
+content-Type: application/json
+{
+    "name": "newUser123",
+    "password": "password123"
+}
+###
+POST https://localhost:5050/user/login HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "newUser123",
+    "password": "password123"
+}
